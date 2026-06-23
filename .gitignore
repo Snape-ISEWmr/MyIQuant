@@ -1,12 +1,14 @@
-# ºöÂÔËùÓĞÄÚÈİ
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 /*
 
-# ²»ºöÂÔ.gitÄ¿Â¼
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.gitÄ¿Â¼
 !/.git
 
-# ²»ºöÂÔ.gitignore
+# ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½.gitignore
 !/.gitignore
 !/.codeartsdoer
+!/.codeartsdoer/rule
+!/.codeartsdoer/specs
 
-# ÔÊĞípythonÄ¿Â¼
+# ï¿½ï¿½ï¿½ï¿½pythonÄ¿Â¼
 !/python
