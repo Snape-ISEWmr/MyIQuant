@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TCStageLayout>
+    <control note="控件">
+        <variable note="控件">
+            <item bind="canRunBuyGrid" name="是否运行买网格" note="默认为True" value="True" type="checkBox"/>
+            <item bind="canRunSellGrid" name="是否运行卖网格" note="默认为True" value="True" type="checkBox"/>
+            <item bind="initBuyBenchmark" name="买向基准价格" note="仅在首次设置有效 后续将自动更新基准价 后台更新 不在textbox更新" value="" type="intput"/>
+            <item bind="initSellBenchmark" name="卖向基准价格" note="仅在首次设置有效 后续将自动更新基准价 后台更新 不在textbox更新" value="" type="intput"/>
+            <item bind="buySlippage" name="买向交易滑点(元)" note="买:买入价+滑点" value="0.00" type="intput"/>
+            <item bind="sellSlippage" name="卖向交易滑点(元)" note="卖:卖出价-滑点" value="0.00" type="intput"/>
+            <item list="绝对值,百分比" bind="buyGridType"  name="买入步长类型" note="买入步长类型 百分比如5% 则步长填写5" value="绝对值" type="combo"/>
+            <item list="绝对值,百分比" bind="sellGridType"  name="卖出步长类型" note="买入步长类型 百分比如5% 则步长填写5" value="绝对值" type="combo"/>
+            <item bind="buyInterval" name="买入步长" note="买入网格的大小" value="" type="intput"/>
+            <item bind="sellInterval" name="卖出步长" note="卖出网格的大小" value="" type="intput"/>
+            <item bind="buyNum" name="每份买入股数" note="每份买入股数" value="" type="intput"/>
+            <item bind="sellNum" name="每份卖出股数" note="每份卖出股数" value="" type="intput"/>
+            <item list="网格价,最新价,对手价" bind="buyPriceType"  name="买入委托类型" note="委托类型: 网格价or最新价or卖一价" value="网格价" type="combo"/>
+            <item list="网格价,最新价,对手价" bind="sellPriceType"  name="卖出委托类型" note="委托类型: 网格价or最新价or卖一价" value="网格价" type="combo"/>
+            <item bind="minPrice" name="价格下限" note="当前价格小于价格下限则不执行买入和卖出" value="" type="intput"/>
+            <item bind="maxPrice" name="价格上限" note="当前价格大于价格上限则不执行买入和卖出" value="" type="intput"/>
+            <item list="普通买入,担保品买入,融资买入" bind="buyType"  name="买入类型" note="普通账户只能选普通买入" value="普通买入" type="combo"/>
+            <item list="普通卖出,担保品卖出,卖券还款" bind="sellType"  name="卖出类型" note="普通账户只能选普通卖出" value="普通卖出" type="combo"/>
+            <item list="全成即更新,委托即更新" bind="buyUpdateType"  name="买基准更新规则" note="完全成交再更新or委托立马更新" value="全成即更新" type="combo"/>
+            <item list="全成即更新,委托即更新" bind="sellUpdateType"  name="卖基准更新规则" note="完全成交再更新or委托立马更新" value="全成即更新" type="combo"/>            
+            <item bind="stgRemark" name="策略注释" note="方便用户运行同标的不同参数 通过自定义注释区分 | 可为空" value="" type="intput"/>
+        </variable>
+    </control>
+</TCStageLayout>

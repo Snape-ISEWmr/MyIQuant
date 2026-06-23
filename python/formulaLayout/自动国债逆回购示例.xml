@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TCStageLayout>
+    <control note="控件">
+        <variable note="控件">
+            <item name="是否使用全部资金" list="否,是" type="combo" note="如果否请在下个选项表明希望使用资金量" bind="ALL_CAP"/>
+            <item name="使用资金量（元）" type="intput" note="期望使用于逆回购的资金量" bind="DOLLAR_VOL"/>
+            <item name="监控时间" note="指定开始进行逆回购的时间， 格式为HHMMSS" value="152500" type="intput" bind="START_TIME"/>
+            <item name="交易品种" list="上交所1天,上交所2天,上交所3天,上交所4天,上交所7天,上交所14天,上交所28天,上交所91天,上交所182天,深交所1天,深交所2天,深交所3天,深交所4天,深交所7天,深交所14天,深交所28天,深交所91天,深交所182天"
+                  type="combo"
+                  note="指定用于逆回购的交易品种"
+                  bind="ASSET_NAME"/>
+        </variable>
+    </control>
+</TCStageLayout>

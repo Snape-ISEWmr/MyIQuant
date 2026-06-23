@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TCStageLayout>
+    <control note="控件">
+        <variable note="控件">
+            <item name="策略备注" note="策略备注" type="intput" bind="strat_remark"/>
+            <item name="开仓方向" note="网格策略方向" list="多,空" type="combo" bind="direction"/>
+            <item name="基准价格" note="网格策略基准价格" type="intput" bind="baseline"/>
+            <item name="价格界限" note="开仓方向的价格界限 (反向则以基准价格为界限)" type="intput" bind="price_lim"/>
+            <item name="单笔交易数量" note="铺单与反向单的单笔数量" type="intput" bind="single_vol"/>
+            <item name="网格铺单深度" note="网格（同开仓方向）铺单笔数" type="intput" bind="grid_size"/>
+            <item name="步长单位" note="网格（同向/反向）报价步长的单位, 比例单位最大支持5位小数" list="元,报价比例" type="combo" bind="step_type"/>
+            <item name="同向报价步长" note="同开仓方向报价步长" type="intput" bind="grid_width"/>
+            <item name="反向报价步长" note="反开仓方向报价步长" type="intput" bind="hedge_width"/>
+            <item name="滑点单位" note="交易报价时的默认滑点单位, 比例单位最大支持5位小数" list="元,报价比例" type="combo" bind="slip_type"/>
+            <item name="滑点" note="交易报价时的默认滑点大小, 默认为0.0无滑点" value="0.0" type="intput" bind="slippage"/>
+            <item name="多头开仓方式" list="资金账户买入,担保品买入,融资买入" type="combo" bind="long_type"/>
+            <item name="空头开仓方式" list="资金账户卖出,担保品卖出,卖券还款" type="combo" bind="short_type"/>
+            <item name="是否复原仓位" note="是否在收盘前恢复当日持仓，默认不回复" value="False" type="checkBox" bind="do_restore"/>
+            <item name="仓位复原水准" note="填-1回复至初始仓位，填大于等于0数值则恢复至该数值仓位" value="" type="intput" bind="restore_pos"/>
+            <item name="仓位复原时间" note="恢复制定仓位的时间,格式为HH:MM:SS" value="14:50:00" type="intput" bind="restore_start"/>
+            <item name="仓位复原报价方式" list="对手价,最新价,卖一价,买一价" value="最新价" type="combo" comboType="price" bind="restore_type"/>
+        </variable>
+    </control>
+</TCStageLayout>

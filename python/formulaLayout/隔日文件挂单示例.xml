@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TCStageLayout>
+    <control note="控件">
+        <variable note="控件">
+            <item name="配置文件路径" note="配置文件路径" value="" type="intput" bind="FILEPATH"/>
+            <item name="买卖方向" list="买入, 卖出" type="combo" bind="DIR"/>
+            <item name="下单总量" note="指定下单总量，股票单位为一股" value="" type="intput" bind="VOL"/>
+            <item name="报单价格(元)" note="指定报单价格" value="" type="intput" bind="PRICE"/>
+            <item name="监控时间" note="指定开始报单，监控时间， 格式为HHMMSS" value="" type="intput" bind="START_TIME"/>
+        </variable>
+    </control>
+</TCStageLayout>
